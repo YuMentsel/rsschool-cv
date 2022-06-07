@@ -14,6 +14,24 @@ I have more than nine years of experience as a professional graphic designer in 
 
 I’m a person who strives to thrive in a fast-paced environment, so, right now I’m looking for an opportunity to apply my technical experience and my creative problem-solving skills as a Front-end Developer.
 
+## Code example:
+
+```
+async function loadJson(url) {
+  let response = await fetch(url);
+
+  if (response.status == 200) {
+    let json = await response.json();
+    return json;
+  }
+
+  throw new Error(response.status);
+}
+
+loadJson('no-such-user.json')
+  .catch(alert);
+```
+
 ## Skills and Proficiency:
 
 - HTML5
