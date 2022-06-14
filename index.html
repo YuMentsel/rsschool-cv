@@ -1,13 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <h1>Yuliya Mentsel</h1>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+  <header class="header">
+    <div class="container">
+      <nav class="nav" id="up">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+          <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container main-container">
+      <div class="section-left photo">
+        <img src="assets/img/photo.jpg" alt="my photo" class="profile-photo">
+      </div>
+      <section class="section-right section-profile">
+        <h1 class="section-title animation-text">Yuliya Mentsel</h1>
+        <div class="section-descr">Front-end Developer | Designer</div>
+      </section>
+
+      <section class="section-left" id="contacts">
+        <h2 class="section-title"><span>Contacts</span></h2>
+        <ul class="section-descr icon-bar">
+          <li class="section-item"><i class="fa fa-street-view"></i><span>Location: </span>Grodno, Belarus</li>
+          <li class="link"><a href="tel:+375298850740" class="section-item link"><i class="fa fa-phone"></i><span>Phone: </span>+375 29 885-07-40</a></li>
+          <li class="section-item"><i class="fa fa-pencil"></i><span>E-mail: </span>yu.mentsel@gmail.com</li>
+          <li class="link"><a href="https://github.com/YuMentsel" class="section-item link" target="_blank"><i class="fa fa-github"></i><span>GitHub: </span>YuMentsel</a></li>
+          <li class="link"><a href="https://www.linkedin.com/in/yuliya-mentsel-212276241/" class="section-item link" target="_blank"><i class="fa fa-linkedin"></i><span>LinkedIn: </span>Yuliya Mentsel</a></li>
+        </ul>
+      </section>
+
+      <section class="section-right" id="summary">
+        <h2 class="section-title"><span>Summary</span></h2>
+        <div class="section-descr">I have more than nine years of experience as a professional graphic designer in the advertising field. I also have been meeting with clients to determine the scope of a project, to refine the message the design should communicate and help develop strategies to reach the target market. <br><br>
+        I’m a person who strives to thrive in a fast-paced environment, so, right now I’m looking for an opportunity to apply my technical experience and my creative problem-solving skills as a Front-end Developer.</div>
+      </section>
+
+      <section class="section-left" id="skills">
+        <h2 class="section-title"><span>Skills</span></h2>
+        <ul class="section-descr">
+          <li class="section-item"><span>HTML5 </span></li>
+          <li class="section-item"><span>CSS3, </span>SASS / SCSS </li>
+          <li class="section-item"><span>BEM, Bootstrap </span></li>
+          <li class="section-item"><span>JavaScript </span>Basics</li>
+          <li class="section-item"><span>React </span>Basics</li>
+          <li class="section-item"><span>Git, npm, </span> Gulp, Webpack</li>
+          <li class="section-item"><span>Figma,  </span>Avocode</li>
+          <li class="section-item"><span>Adobe Photoshop, </span> Illustrator</li>
+        </ul>
+      </section>
+
+      <section class="section-right" id="code">
+        <h2 class="section-title"><span>Code example</span></h2>
+        <pre class="code"><code>
+    let users = [
+      { name: "John", age: 20, surname: "Johnson" },
+      { name: "Pete", age: 18, surname: "Peterson" },
+      { name: "Ann", age: 19, surname: "Hathaway" }
+    ];
+
+    function byField(field) {
+      return (a, b) => a[field] > b[field] ? 1 : -1;
+    }
+
+    users.sort(byField('name'));
+    users.forEach(user => alert(user.name));
+
+    users.sort(byField('age'));
+    users.forEach(user => alert(user.name));
+        </code></pre>
+          
+      </section>
+      <div class="section-left">
+        <section class="section" id="education">
+        <h2 class="section-title"><span>Education</span></h2>
+        <ul class="section-descr">
+          <li class="section-item"><span>Vitebsk State University</span><br>
+            <i>designer, teacher of computer graphics</i></li>
+        </ul>
+        </section>
+        
+        <section class="section" id="courses">
+        <h2 class="section-title"><span>Courses</span></h2>
+        <ul class="section-descr">
+          <li class="section-item"><span>Udemy </span>
+            <ul class="section-descr">
+              <li class="section-item">HTML/CSS</li>
+              <li class="section-item">JavaScript & React ( in process )</li>
+            </ul>
+          </li>
+        </ul>
+        </section>
+
+        <section class="section" id="languages">
+          <h2 class="section-title"><span>Languages</span></h2>
+          <ul class="section-descr">
+            <li class="section-item"><span>Russian </span>Native speaker</li>
+            <li class="section-item"><span>English </span>Intermediate (B1)</li>
+          </ul>
+        </section>
+      </div>
+      
+      <section class="section-right" id="projects">
+        <h2 class="section-title"><span>Projects</span></h2>
+        <a href="https://github.com/YuMentsel" target="_blank"><img src="assets/img/pulse.jpg" alt="pulse" class="projects"></a>
+      </section>
+      
+    </div>
+  <a href="#up" class="pageup">
+		<img src="assets/icons/up.svg" alt="up">
+	</a>
+</main>
+
+  <footer class="footer">
+    <div class="container footter-container">
+      <div class="footer-item link"><a href="https://github.com/YuMentsel" target="_blank"><img src="assets/icons/github.svg" alt="github" class="github"></a></div>
+      <div class="footer-item">June 2022</div>
+      <div class="footer-item link"><a href="https://rs.school/js/" target="_blank"><img src="assets/icons/rs_school.svg" alt="rss" class="rss"></a></div>
+    </div> 
+  </footer>
+
+</body>
 </html>
