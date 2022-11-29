@@ -123,6 +123,7 @@ h1.section-title {
   font-size: 26px;
   font-weight: 500;
   text-transform: uppercase;
+  transition: .3s;
 }
 
 .section-title span:after {
