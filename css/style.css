@@ -3,7 +3,7 @@
 }
 
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
 body {
@@ -175,7 +175,31 @@ h1.section-title {
 }
 
 .projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
   width: 100%;
+}
+
+.projects li {
+  position: relative;
+  width: calc(50% - 16px);
+  max-height: 185px;
+
+}
+
+.projects a {
+  width: 100%;
+  height: 100%;
+}
+
+.projects img {
+  width: 100%;
+  height: auto;
 }
 
 .footter-container {
